@@ -1,0 +1,96 @@
+
+body, html {
+    height: 100%;
+    background-color: antiquewhite;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Climate Crisis', cursive;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+button {
+    color: #F2E2C4; 
+    background-color: #403d3a;
+    padding: 1rem 2rem;
+    border: #F2E2C4;
+    border-style: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    cursor: pointer;   
+    background-color: hsla(135, 75%, 50%, 0.6);
+    backdrop-filter: blur(8px);
+    color: hsla(135, 80%, 10%, 1.0);
+    border: none;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    background-image: url(images/robert-sachowski-HFIvhaOcHVA-unsplash.jpeg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-eagle {
+    background-image: url(images/eagle_alfred-kenneally-69JBZWDa1r8-unsplash.jpeg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-whale {
+    background-image: url(images/whaleshark_ishan-seefromthesky-wXt0DiISf38-unsplash.jpeg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.text {
+    background-color: #403d3a;
+    color: #F2E2C4;
+    min-height: 20px;
+    padding: 2.5rem 8rem 5rem 8rem;
+    text-align: center;
+}
+
+.bottom-txt {
+    margin-bottom: 100px;
+}
+
+@media(max-width: 568px) {
+    .container, .parallax-eagle, .parallax-whale {
+        background-attachment: scroll;
+    }
+    .text {
+        padding: 2.5rem 4rem 5rem 4rem;
+    }
+
+    
+    
+}
